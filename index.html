@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+body{
+    background-color:#cfcebe;
+    padding: 0;
+}
+.services{
+    display:flex;
+}
+.services img{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+ 
+}
+ .logo img:hover {
+  transform: scaleZ(2);
+}
+.services h1{
+    top: 200px;
+    text-align: center;
+    z-index: 1;
+    font-size: 3rem;
+    position:absolute;
+    color: #ffff;
+    background: rgba(0, 0, 0, 0.5);
+    width:100%;
+    height:7rem;
+}
+.header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    background-image: url("assets/images/menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:2rem;
+    justify-content: space-between;
+    top:0;left:0;right:0;
+}
+.header img{
+    width:8vw;
+    height:100%;
+}
+
+.header .navbar a{
+    margin:0.5rem;
+    font-size: 1.5vw;
+    color:#ffff;
+    text-decoration: none;
+    justify-content:space-between
+}
+
+.header .navbar a:hover{
+    color:red;
+}
+.header.active{
+    padding:2rem 5%;
+    box-shadow: #c0c0c0;
+}
+/* Slideshow container */
+#slideshow-container{
+  height:100vh;
+  width:100vw;
+  position: relative;
+  margin: auto;
+  padding-bottom:40px;
+}
+#slideshow-container img{
+    top: 80px;
+    height:100vh;
+    width:100vw;
+}
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.container{
+    margin-top:50px;
+    margin-bottom: 50px;
+    width:100vw;
+    display:grid;
+    grid-template-rows: repeat(7,1fr);
+    gap: 40px;
+    justify-content: center;
+    box-sizing:border-box;
+}
+.container div{
+    height: 400px;
+    width: 75vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+#box{
+    background-color: #ffffff;
+    width:80vw;
+    height:25vh;
+    box-shadow: 10px 10px 8px #888888;
+    overflow: hidden;
+}
+#box div{
+    font-size: 4vw; 
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#box div img{
+    width: 20px;
+    height:20px;
+} 
+#box div div{
+    height: 5px;
+    width: 70vw;
+    background-color: #c0c0c0;
+}
+.container1{
+    margin-top:50px;
+    margin-bottom: 50px;
+    width:100vw;
+    display:grid;
+    grid-template-rows: repeat(1,1fr);
+    gap: 40px;
+    justify-content: center;
+    box-sizing:border-box;
+}
+.container1 div{
+    height: 400px;
+    width: 80vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+#myBtn1 {
+      display: none;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      z-index: 99;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    
+    #myBtn1:hover {
+      transform: scale(1.5);
+    }
+
+#box1{
+    background-color: #ffffff;
+    width:80vw;
+    height:15vh;
+    box-shadow: 10px 10px 8px #888888;
+    padding:2rem 5%;
+}
+#box1 div{
+    margin-top: 20px;
+    font-size: 2.5vw;
+}
+.container2{
+    margin-top:50px;
+    margin-bottom: 50px;
+    width:100vw;
+    display:grid;
+    grid-template-rows: repeat(1,1fr);
+    gap: 40px;
+    justify-content: center;
+    box-sizing:border-box;
+}
+.container2 div{
+    height: 400px;
+    width: 75vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.container3{
+    margin-top:50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    box-sizing:border-box;
+}
+#box2{
+    background-color: #002460;
+    width:80vw;
+    height:20vh;
+    color: #ffff;
+    box-shadow: 10px 10px 8px #888888;
+    padding:2rem 5%;
+}
+#box2 div{
+    font-size: 2.5vw;
+}
+.container div div button{
+    border-radius: 50px;
+    background-image: linear-gradient(#003a99, #001844);
+    height: 20px;
+    width: 70px;
+    border: none;
+    color: #ffff;
+    font-size: 1.7vw;
+    box-shadow: 10px 10px 8px #888888;
+}
+.services img{
+    width: 100vw;
+    height: 80vh;
+}
+#blog{
+    background-image: url("assets/images/blog.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    color: #ffff;
+    width: 100vw;
+    height: 80px;
+}
+#blog h1{
+    font-size: 50px;
+    height:100px;
+    padding-top: 10px;
+}
+#about{
+    background-image: url("assets/images/about.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    color: #ffff;
+    width: 100vw;
+    height: 80px;
+}
+#about h1{
+    font-size: 50px;
+    height:100px;
+    padding-top: 10px;
+}
+#service{
+    background-image: url("assets/images/service.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    color: #ffff;
+    width: 100vw;
+    height: 15vh;
+}
+#service h1{
+    font-size: 50px;
+    height:100px;
+    padding-top: 10px;
+}
+#clients{
+    background-image: url("assets/images/clients.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    color: #ffff;
+    width: 100vw;
+    height: 80px;
+}
+#clients h1{
+    font-size: 50px;
+    height:100px;
+    padding-top: 10px;
+}
+#contact_btn{
+ width:15vw;
+ height:100%;
+}
+.client{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+.client div{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.client img{
+    width: 100px;
+}
+.footer{
+    background-color:rgb(0, 0, 0);
+    height:40vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 20px;
+    color:#ffff;
+}
+        /*  ----------new style----------*/
+.nav0{
+        display: flex;
+        justify-content:center;
+        margin-top: 20px;
+    }
+
+   .section {
+  display: flex;
+}
+#nav {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav2 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav33 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav5 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav7 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav9 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav11 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#med{
+    width:80vw;
+}
+#nav1 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+#nav3 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav4 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav6 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav8 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav10 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav12 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+#line{
+    height: 0.2rem;
+    width: 80vw;
+    background-color:#c0c0c0;
+    border-radius: 50px;
+}
+.box{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+}
+.btn{
+    display: flex;
+}
+.plus{
+    position:absolute;
+    cursor: pointer;
+}
+.minus{
+    position:relative;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 580px) {
+    body{
+    background-color:#cfcebe;
+    margin: 0;
+    padding:0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    background-image: url("assets/images/navbar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    padding:2rem 5%;
+    justify-content: space-between;
+    top:0;left:0;right:0;
+}
+.header img{
+    width:10vw;
+    height:100%;
+}
+#more {display: none;}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.5vw;
+    color:#ffff;
+    text-decoration: none;
+}
+#myBtn1 {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+      width: 22px;
+    }
+    
+    #myBtn1:hover {
+      transform: scale(1.5);
+    }
+
+.header .navbar a:hover{
+    color:red;
+}
+.header.active{
+    padding:2rem 9%;
+    box-shadow: #c0c0c0;
+}
+.container{
+    margin-top:50px;
+    margin-bottom: 50px;
+    width:100vw;
+    display:grid;
+    grid-template-rows: repeat(7,1fr);
+    gap: 40px;
+    justify-content: center;
+    box-sizing:border-box;
+}
+.container div{
+    height: 400px;
+    width: 75vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+#box{
+    background-color: #ffffff;
+    width:80vw;
+    height:60vh;
+    box-shadow: 10px 10px 8px #888888;
+    overflow: hidden;
+}
+#box div{
+    font-size: 2vw; 
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#box div img{
+    width: 40px;
+    height:40px;
+} 
+#box div div{
+    height: 5px;
+    width: 70vw;
+    background-color: #c0c0c0;
+}
+.container1{
+    margin-top:50px;
+    margin-bottom: 50px;
+    width:100vw;
+    display:grid;
+    grid-template-rows: repeat(1,1fr);
+    gap: 40px;
+    justify-content: center;
+    box-sizing:border-box;
+}
+.container1 div{
+    height: 400px;
+    width: 80vw;
+    overflow:hidden;
+}
+
+#box1{
+    background-color: #ffffff;
+    width:100%;
+    height:100%;
+    box-shadow: 10px 10px 8px #888888;
+}
+#box1 div{
+    margin-top: 20px;
+    padding-left: 90px;
+    font-size: 2.5vw;
+    overflow-wrap: break-word;
+}
+.container2{
+    margin-top:50px;
+    margin-bottom: 50px;
+    width:100vw;
+    display:grid;
+    grid-template-rows: repeat(1,1fr);
+    gap: 40px;
+    justify-content: center;
+    box-sizing:border-box;
+}
+.container2 div{
+    height: 400px;
+    font-size: 3vw;
+    width: 80vw;
+}
+.container3{
+    margin-top:50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    box-sizing:border-box;
+}
+#box2{
+    background-color: #002460;
+    width:100vw;
+    height:100%;
+    color: #ffff;
+    font-weight:900;
+}
+#box2 div{
+    margin-top: 20px;
+    padding-left: 90px;
+    font-size: 4vw;
+}
+.container div div button{
+    border-radius: 50px;
+    background-image: linear-gradient(#003a99, #001844);
+    height: 7vh;
+    width: 15vw;
+    border: none;
+    color: #ffff;
+    font-size: 1.7vw;
+    box-shadow: 10px 10px 8px #888888;
+}
+.services{
+    display:flex;
+}
+#slideshow-container{
+  height:130vh;
+  width:100vw;
+  position: relative;
+  margin: auto;
+  padding-bottom:40px;
+}
+#slideshow-container img{
+    top: 80px;
+    height:130vh;
+    width:100vw;
+}
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+ .logo img:hover {
+  transform: scaleZ(2);
+}
+.services h1{
+    top: 200px;
+    text-align: center;
+    z-index: 1000;
+    font-size: 6rem;
+    position:absolute;
+    color: #ffff;
+    background: rgba(0, 0, 0, 0.5);
+    width:100%;
+    height:7rem;
+}
+#blog{
+    background-image: url("assets/images/blog.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    color: #ffff;
+    width: 100%;
+    height: 130px;
+}
+#blog h1{
+    font-size: 50px;
+    height:100px;
+    padding-top: 10px;
+}
+#about{
+    background-image: url("assets/images/about.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    color: #ffff;
+    width: 100vw;
+    height: 15vh;
+}
+#about h1{
+    font-size: 50px;
+    height:100px;
+    padding-top: 10px;
+}
+#service{
+    background-image: url("assets/images/service.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 15vh;
+    color: #ffff;
+}
+#service h1{
+    font-size: 50px;
+    height:100px;
+    padding-top: 10px;
+}
+#clients{
+    background-image: url("assets/images/clients.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    color: #ffff;
+    width: 100vw;
+    height: 80px;
+}
+#clients h1{
+    font-size: 50px;
+    height:100px;
+    padding-top: 10px;
+}
+.client{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+.client div{
+    padding: 10px 40%;
+}
+.client img{
+    width: 100px;
+}
+.footer{
+    background-color:rgb(0, 0, 0);
+    height:40vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 20px;
+    color:#ffff;
+}
+/*  ----------new style----------*/
+.nav0{
+        display: flex;
+        justify-content:center;
+        margin-top: 20px;
+    }
+
+   .section {
+  display: flex;
+}
+#nav {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav2 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav33 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav5 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav7 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav9 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav11 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: none;
+  box-shadow: 10px 10px 8px #888888;
+}
+#med{
+    width:80vw;
+}
+#nav1 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+#nav3 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav4 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav6 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav8 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav10 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+#nav12 {
+  background: rgb(255, 255, 255);
+  padding: 30px 2%;
+  width:80vw;
+display: block;
+  box-shadow: 10px 10px 8px #888888;
+}
+#line{
+    height: 0.2rem;
+    width: 80vw;
+    background-color:#c0c0c0;
+    border-radius: 50px;
+}
+.box{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+}
+.btn{
+    display: flex;
+}
+.plus{
+    position:absolute;
+    cursor: pointer;
+}
+.minus{
+    position:relative;
+    cursor: pointer;
+}
+#image{
+    display: flex;
+}
+#image img{
+    width: 40vw;
+    height: 60vh;
+}
+#contact_btn{
+ width:10vw;
+ height:100%;
+}
+#contact_btn:hover{
+    transform: scale(1.5);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #002460;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 0, 0);
+}
+#mySidenav a {
+  position: fixed;
+  left: -110px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  z-index: 2000;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#whatsapp {
+  top: 380px;
+  background-color: #4CAF50;
+}
+
+#twitter {
+  top: 460px;
+  background-color: #2196F3;
+}
+
+#youtube {
+  top: 500px;
+  background-color: #f44336;
+}
+
+#facebook {
+  top: 560px;
+  background-color: rgb(89, 0, 255)
+}
+}
+    </style>
+    <style>
+        
+#mySidenav a {
+  position: fixed;
+  left: -110px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  z-index: 2000;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#whatsapp {
+  top: 340px;
+  background-color: #4CAF50;
+}
+
+#twitter {
+  top: 400px;
+  background-color: #2196F3;
+}
+
+#youtube {
+  top: 460px;
+  background-color: #f44336;
+}
+
+#facebook {
+  top: 520px;
+  background-color: rgb(89, 0, 255)
+}
+        
+        
+    </style>
+        
+</head>
+<body> 
+    <section>
+        <header class="header">    
+            <a href="#" id="logo" class="logo"><img src="assets/images/logo.png" alt=""></a>
+                <nav class="navbar" id="myTopnav">
+                <a href="#">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#service">Services</a>
+                <a href="#clients">Our Clients</a>
+                <a href="#">News</a>
+                <a href="#contact">Contact Us</a>
+            </nav>    
+        </header>
+    </section>
+    <div class="services">
+        <div id="mySidenav" class="sidenav">
+            <a href="https://www.whatsapp.com" id="whatsapp">Whatsapp</a>
+            <a href="https://www.twitter.com" id="twitter">Twitter</a>
+            <a href="https://www.youtube.com" id="youtube">Youtube</a>
+            <a href="https://www.facebook.com" id="facebook">Facebook</a>
+          </div>
+        <h1>We Grow Together</h1>
+        <!-- Slideshow container -->
+<div class="slideshow-container" id="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="assets/images/service.jpeg" alt="" height="100vh">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="assets/images/outdoor.png" alt="" height="100vh">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="assets/images/baby.png" alt="" height="100vh">
+      <div class="text"></div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+   
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+    </div>
+    <div class="service" id="service">
+        <center><h1>Services</h1></center>
+    </div> 
+    <section>
+        <nav class="nav0">
+                            <nav class="nav" id="nav">
+                                <div class="box">
+                                    <h3>Digital Media Strategy</h3>  
+                                    <div class="btn" id="btn">
+                                        <img id="plus" src="assets/images/icon5.png" title="View Less" alt="" width="32" height="32" onclick="show2()">
+                                    </div>
+                                </div>
+                            
+                                <div class="line" id="line"></div>
+                                <p>A cutting edge strategy that completely transforms your key perfomance indicators in the long run and gives you a digital footprint.</p>
+                                <img id="med" src="assets/images/media.png" alt="">
+                                <br>
+                                <br>
+                                <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a>           
+                            </nav>
+                            <nav class="nav1" id="nav1">
+                                <div class="box">
+                                    <h3>Digital Media Strategy</h3>
+                                    <div class="btn" id="btn">
+                                        <img src="assets/images/icon6.png" alt="" title="View More" width="32" height="32" onclick="show1()">
+                                    </div>
+                                </div>
+                                <div class="line" id="line"></div>
+                                <p>A cutting edge strategy that completely transforms your key perfomance indicators in the long run and gives you a digital footprint.</p>
+                                
+                                 <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center></a>
+                             </nav>
+    </nav>   
+    
+    <nav class="nav0">
+                            <nav class="nav2" id="nav2">
+                                <div class="box">
+                                    <h3>Social Media</h3>
+                                    <div class="btn" id="btn">
+                                        <img id="plus" src="assets/images/icon5.png" alt="" width="32" height="32" onclick="show3()">
+                                    </div>
+                                </div>
+                            
+                                <div class="line" id="line"></div>
+                            <br>
+                            <p>Support, management and content creation for your social media platforms to increase your reach and capitalise on the strength of social media marketing.</p>
+                            <br>    
+                            <div id="image">
+                                <img id="med" src="assets/images/social.jpg" alt="">
+                                <img id="med" src="assets/images/social1.png" alt="">
+                                </div>
+                            <br>
+                            <br>
+                            <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a> 
+                            </nav>
+                            <nav class="nav3" id="nav3">
+                                <div class="box">
+                                    <h3>Social Media</h3>
+                                    <div class="btn" id="btn">
+                                        <img src="assets/images/icon6.png" alt="" width="32" height="32" onclick="show4()">
+                                    </div>
+                                </div>
+                                <div class="line" id="line"></div>
+                                <p>Support, management and content creation for your social media platforms to increase your reach and capitalise on the strength of social media marketing.</p>
+                   
+                                <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a> 
+                            </nav>
+    </nav>   
+    
+    <nav class="nav0">
+                            <nav class="nav33" id="nav33">
+                                <div class="box">
+                                    <h3>Web Development</h3> 
+                                    <div class="btn" id="btn">
+                                        <img id="plus" src="assets/images/icon5.png" alt="" width="32" height="32" onclick="show5()">
+                                    </div>
+                                </div>
+                            
+                                <div class="line" id="line"></div>
+                                <br>
+                                <p>Website building and maintenance on a consistent basis, for a perfect user friendly experience.</p>
+                                <br>
+                                <div id="image">
+                                    <img id="med" src="assets/images/web1.png" alt="">
+                                    <img id="med" src="assets/images/web2.png" alt="">
+                                    </div>
+                                <br>
+                                <br> <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a> 
+                            </nav>
+                            <nav class="nav4" id="nav4">
+                                <div class="box">
+                                    <h3>Web Development</h3>
+                                    <div class="btn" id="btn">
+                                        <img src="assets/images/icon6.png" alt="" width="32" height="32" onclick="show6()">
+                                    </div>
+                                </div>
+                                <div class="line" id="line"></div>
+                                <p>Website building and maintenance on a consistent basis, for a perfect user friendly experience.</p>
+                                <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a> 
+                            </nav>
+    </nav>   
+    
+    <nav class="nav0">
+                            <nav class="nav5" id="nav5">
+                                <div class="box">
+                                    <h3>Mobile Application Development</h3>
+                                    <div class="btn" id="btn">
+                                        <img id="plus" src="assets/images/icon5.png" alt="" width="32" height="32" onclick="show7()">
+                                    </div>
+                                </div>
+                            
+                                <div class="line" id="line"></div>
+                                <p>Creation and development of mobile friendly and innovation applications that suit user needs.</p>
+                                <br>
+                                <div id="image">
+                                    <img id="med" src="assets/images/mobile1.png" alt="">
+                                    <img id="med" src="assets/images/mobile2.png" alt="">
+                                    </div>
+                                <br>
+                                <br>
+                                <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a>    
+                            </nav>
+                            <nav class="nav6" id="nav6">
+                                <div class="box">
+                                    <h3>Mobile Application Development</h3>
+                                    <div class="btn" id="btn">
+                                        <img src="assets/images/icon6.png" alt="" width="32" height="32" onclick="show8()">
+                                    </div>
+                                </div>
+                                <div class="line" id="line"></div>
+                                <p>Creation and development of mobile friendly and innovation applications that suit user needs.</p>
+                                <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a> 
+                            </nav>
+    </nav>   
+    
+    <nav class="nav0">
+                            <nav class="nav7" id="nav7">
+                                <div class="box">
+                                    <h3>Photography</h3>
+                                    <div class="btn" id="btn">
+                                        <img id="plus" src="assets/images/icon5.png" alt="" width="32" height="32" onclick="show9()">
+                                    </div>
+                                </div>
+                            
+                                <div class="line" id="line"></div>
+                                <p>Provision of quality photography and videography services for events, products and casual shoots.</p>
+                                <br>
+                                <div id="image">
+                                    <img id="med" src="assets/images/baby.png" alt="">
+                                    <img id="med" src="assets/images/outdoor.png" alt="">
+                                    </div>
+                                <br>
+                                <br>
+                                <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a>          
+                            </nav>
+                            <nav class="nav8" id="nav8">
+                                <div class="box">
+                                    <h3>Photography</h3>
+                                    <div class="btn" id="btn">
+                                        <img src="assets/images/icon6.png" alt="" width="32" height="32" onclick="show10()">
+                                    </div>
+                                </div>
+                                <div class="line" id="line"></div>
+                                <p>Provision of quality photography and videography services for events, products and casual shoots.</p>
+                                <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a> 
+                            </nav>
+    </nav>   
+    
+    <nav class="nav0">
+                            <nav class="nav9" id="nav9">
+                                <div class="box">
+                                    <h3>Branding</h3>
+                                    <div class="btn" id="btn">
+                                        <img id="plus" src="assets/images/icon5.png" alt="" width="32" height="32" onclick="show11()">
+                                    </div>
+                                </div>
+                            
+                                <div class="line" id="line"></div>
+                                <p>Provision of branding services including premise branding promotional material, corporate branding services, brand management and consultancy service.</p>
+                                <br>
+                                <div id="image">
+                                    <img id="med" src="assets/images/hangover_branding.png" alt="">
+                                    <img id="med" src="assets/images/velvet_branding.png" alt="">
+                                    </div>
+                                <br>
+                                <br>
+                                <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a>          
+                            </nav>
+                            <nav class="nav10" id="nav10">
+                                <div class="box">
+                                    <h3>Branding</h3>
+                                    <div class="btn" id="btn">
+                                        <img src="assets/images/icon6.png" alt="" width="32" height="32" onclick="show12()">
+                                    </div>
+                                </div>
+                                <div class="line" id="line"></div>
+                                <p>Provision of branding services including premise branding promotional material, corporate branding services, brand management and consultancy service.</p>
+                    
+                                <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a> 
+                            </nav>
+    </nav>   
+    
+    <nav class="nav0">
+                            <nav class="nav11" id="nav11">
+                                <div class="box">
+                                    <h3>Design</h3>
+                                    <div class="btn" id="btn">
+                                        <img id="plus" src="assets/images/icon5.png" alt="" width="32" height="32" onclick="show13()">
+                                    </div>
+                                </div>
+                            
+                                <div class="line" id="line"></div>
+                                <p>You can entrust us with your brand image through our exclusive graphic design services that make you stand out.</p>
+                                <div id="image">
+                                    <img id="med" src="assets/images/sans_bourne_logo.png" alt="">
+                                    <img id="med" src="assets/images/southern_chicken.png" alt="">
+                                    </div>
+                                <br>
+                                <br>
+                                <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a>          
+                            </nav>
+                            <nav class="nav12" id="nav12">
+                                <div class="box">
+                                    <h3>Design</h3>
+                                    <div class="btn" id="btn">
+                                        <img src="assets/images/icon6.png" alt="" width="32" height="32" onclick="show14()">
+                                    </div>
+                                </div>
+                                <div class="line" id="line"></div>
+                                <p>You can entrust us with your brand image through our exclusive graphic design services that make you stand out.</p>
+                                <a href="#contact"><center><img id="contact_btn" src="assets/images/Contact_Us.png" alt=""></center> </a> 
+                            </nav>
+    </nav>   
+    
+    </section>
+        <script>
+    function show1(){
+        document.getElementById('nav1').style.display='none';
+        document.getElementById('nav').style.display='block';
+    }
+    function show2(){
+        document.getElementById('nav').style.display='none';
+        document.getElementById('nav1').style.display='block';
+    }
+    function show4(){
+        document.getElementById('nav3').style.display='none';
+        document.getElementById('nav2').style.display='block';
+    }
+    function show3(){
+        document.getElementById('nav2').style.display='none';
+        document.getElementById('nav3').style.display='block';
+    }
+    function show6(){
+        document.getElementById('nav4').style.display='none';
+        document.getElementById('nav33').style.display='block';
+    }
+    function show5(){
+        document.getElementById('nav33').style.display='none';
+        document.getElementById('nav4').style.display='block';
+    }
+    function show8(){
+        document.getElementById('nav6').style.display='none';
+        document.getElementById('nav5').style.display='block';
+    }
+    function show7(){
+        document.getElementById('nav5').style.display='none';
+        document.getElementById('nav6').style.display='block';
+    }
+    function show10(){
+        document.getElementById('nav8').style.display='none';
+        document.getElementById('nav7').style.display='block';
+    }
+    function show9(){
+        document.getElementById('nav7').style.display='none';
+        document.getElementById('nav8').style.display='block';
+    }
+    function show12(){
+        document.getElementById('nav10').style.display='none';
+        document.getElementById('nav9').style.display='block';
+    }
+    function show11(){
+        document.getElementById('nav9').style.display='none';
+        document.getElementById('nav10').style.display='block';
+    }
+    function show14(){
+        document.getElementById('nav12').style.display='none';
+        document.getElementById('nav11').style.display='block';
+    }
+    function show13(){
+        document.getElementById('nav11').style.display='none';
+        document.getElementById('nav12').style.display='block';
+    }
+    function myFunction222() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+        </script>
+
+    <div class="blog" id="blog">
+         <center><h1>Blog</h1></center>
+    </div>
+<section>
+    <nav class="nav0"> 
+        <nav class="nav4" id="nav4">
+            <div class="box">
+                <h1>Headline</h1>
+                    <h4>By:John Deo</h4>
+                    <h4>12.08.2019</h4>
+            </div>
+            <div class="line" id="line"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+          <span onclick="myFunction222()" id="myBtn" style="color:#003a99"> more...<img src="assets/images/more.png" alt="" width="24"> </span>
+        </nav>
+</nav> 
+</section>   
+<div class="about" id="about">
+    <center><h1>About</h1></center>
+</div>   
+<section>
+    <nav class="nav0"> 
+        <nav class="nav4" id="nav4"  style="background-color:#002460;">
+            <p style="color:#ffffff;"><b>Reserved is a Zimbabwe based digital creative agency with key interests in social media marketing, web design, branding, mobile application development, photography and graphic design.</b></p>
+        </nav>
+</nav>  
+</section> 
+
+
+
+
+<div class="clients" id="clients">
+    <center><h1>Our Clients</h1></center>
+</div> 
+<div class="container3">
+    <div class="client" id="client">
+        <div><img src="assets/images/school.png" alt=""></div>
+        <div><img src="assets/images/hangover.png" alt=""></div>
+        <div><img src="assets/images/capital_foods.png" alt=""></div>
+        <div><img src="assets/images/velvet.png" alt=""></div>
+        <div><img src="assets/images/Daruler.png" alt=""></div>
+    </div>
+</div>
+<section>
+<footer class="footer"> 
+    <br>   
+    <h1 id="contact">Contact Us</h1>
+    <p>
+        +263 775 353 142/ +263 775 843 122
+    </p>
+    <p>
+        <a href=""><img src="" alt=""></a>
+        <a href=""><img src="" alt=""></a>
+        <a href=""><img src="" alt=""></a>
+    </p>
+    <div class="credit"> created by <span class="glow">Tsakane</span>| all rights reserved </div>
+</footer>
+</section>
+<img src="assets/images/top.png" alt=""onclick="topFunction()" id="myBtn1" title="Go to top">
+<style>
+    #myBtn1 {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+      width: 42px;
+    }
+    
+    #myBtn1:hover {
+      transform: scale(1.5);
+    }
+    </style>
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn1");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction(),myFunc()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <style>
+        
+.glow {
+  font-size:20px;
+  color: rgb(151, 151, 151);
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+        .bar {
+          position: fixed;
+          top: 0;
+          z-index: 3000;
+          width: 100%;
+          background-color: #f1f1f1;
+        }
+        
+        .progress-container {
+          width: 100%;
+          height: 4px;
+          background: #ccc;
+        }
+        
+        .progress-bar {
+          height: 4px;
+          background: #ff0000;
+          width: 0%;
+        }
+        
+        </style>
+        </head>
+        <body>
+        
+        <div class="bar">
+          <div class="progress-container">
+            <div class="progress-bar" id="mytopBar"></div>
+          </div>  
+        </div>
+        
+        <script>
+        // When the user scrolls the page, execute myFunction 
+        
+        
+        function myFunc() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("mytopBar").style.width = scrolled + "%";
+        }
+        </script>
+        
+</body>
+</html>
